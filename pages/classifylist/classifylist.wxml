@@ -1,0 +1,29 @@
+<!--pages/classifylist/classifylist.wxml-->
+<view>
+  <view  wx:for-items="{{classifylist}}" wx:for-item="item" wx:key="item.id" >
+    <view  class='list_classify' bindtap='queryclassify' data-id="{{item.id}}">
+      <text>{{item.name}}</text>
+      <text class='join_del_classify' wx:if="{{item.isjoin == 1}}"><text wx:if="{{isjoin}}">退出</text> </text>
+      <text class='join_del_classify' wx:if="{{item.isjoin == 0}}"><text wx:if="{{isjoin}}">加入</text></text>
+    </view>
+    
+  </view>
+  <view wx:if="{{!queryclassifyuser}}">
+    <text>此分类下暂无人才库</text>
+    <view wx:for-items="{{queryclassifyuser}}" wx:for-item="item" wx:key="item.id">
+      <navigator url="/pages/detail/detail?id={{item.id}}" class="itemnav">
+        <view class="item">
+          <view class="photo">
+            <image style="width: 100%;  background-color: #eeeeee;" mode="widthFix" src="./images/m{{item.mould}}.jpg"></image>
+          </view>
+          <view class="mask">
+            <view class="name text-overflow">{{item.name}}</view>
+            <view class="ident text-overflow">{{item.identity}}</view>
+            <view class="uid text-overflow">有才ID:{{item.ycid}}</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  
+</view>

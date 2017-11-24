@@ -1,0 +1,19 @@
+<!--pages/make_preson/make_preson.wxml-->
+<view class='my_preson_wrapper'>
+  <view class='my_preson'>
+    <navigator url='/pages/edit_detail/edit_detail?moid=0'>
+      <image style='width:100%' src='../../images/m1.jpg' mode="aspectFit"></image>
+      <view class='model_class'>
+        <text>模板风格1</text>
+      </view>
+    </navigator>
+  </view>
+    <view class='my_preson'>
+      <navigator url='/pages/edit_detail/edit_detail?moid=2'>
+        <image style='width:100%' src='../../images/m2.jpg' mode="aspectFit"></image>
+        <view class='model_class'>
+          <text>模板风格2</text>
+        </view>
+      </navigator>
+    </view>
+</view>

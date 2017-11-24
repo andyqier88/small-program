@@ -1,0 +1,10 @@
+<!--pages/myclassify/myclassify.wxml-->
+<view>
+  <view>
+    <view class='list_classify' wx:for-items="{{myclassifylist}}" wx:for-item="item" wx:key="item.id">
+      <text>{{item.name}}</text>
+      <text class='join_del_classify' wx:if="{{item.isjoin == 1}}">退出</text>
+      <text class='join_del_classify' wx:if="{{item.isjoin == 0}}">加入</text>
+    </view>
+  </view>
+</view>

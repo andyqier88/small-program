@@ -1,0 +1,100 @@
+<view class="tmp1" wx:if="{{detail.mould == 1}}">
+  <view class="top">
+    <image mode="widthFix" src="./images/bg.png" style="width:100%;"></image>
+  </view>
+  <view class="main">
+    <view class="info">
+      <view class="photo">
+        <image style="width: 180rpx; height: 180rpx;" mode="aspectFill" src="{{detail.pic}}"></image>
+      </view>
+      <view class="uname">{{detail.name}}</view>
+      <view class="menu">
+        有才ID:{{detail.ycid}}
+        <view class="tag tag-shi tag-cur" wx:if="{{detail.smrz==1}}">实</view>
+        <view class="tag tag-shi" wx:else>实</view>
+        <view class="tag tag-qi tag-cur" wx:if="{{detail.qyrz==1}}">企</view>
+        <view class="tag tag-qi" wx:else>企</view>
+        <view class="tag tag-guan tag-cur" wx:if="{{detail.gfrz==1}}">官</view>
+        <view class="tag tag-guan" wx:else>官</view>
+        <view class="tag tag-dan tag-cur" wx:if="{{detail.dbrz==1}}">担</view>
+        <view class="tag tag-dan" wx:else>担</view>
+      </view>
+      <view class="lablist">
+        <block wx:for="{{idenarr}}" wx:key="*this">
+          <view class="lab">{{item}} </view>
+        </block>
+
+      </view>
+    </view>
+
+    <view class="bues">
+      <view class="title">业务范围</view>
+      <view class="cont">
+        <block wx:for="{{buesarr}}" wx:key="*this">
+          <view class="text"> {{index+1}}、{{item}} </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="uabout">
+      <view class="title">个人简介</view>
+      <view class="cont">{{detail.content}}</view>
+    </view>
+
+  </view>
+</view>
+
+
+
+<view class="tmp2" wx:if="{{detail.mould == 2}}">
+  <view class="top">
+    <image mode="widthFix" src="{{detail.pic}}" style="width:100%;"></image>
+  </view>
+  <view class="main">
+    <view class="info">
+
+      <view class="uname">{{detail.name}}</view>
+      <view class="menu">
+        有才ID:{{detail.ycid}}
+        <view class="tag tag-shi tag-cur" wx:if="{{detail.smrz==1}}">实</view>
+        <view class="tag tag-shi" wx:else>实</view>
+        <view class="tag tag-qi tag-cur" wx:if="{{detail.qyrz==1}}">企</view>
+        <view class="tag tag-qi" wx:else>企</view>
+        <view class="tag tag-guan tag-cur" wx:if="{{detail.gfrz==1}}">官</view>
+        <view class="tag tag-guan" wx:else>官</view>
+        <view class="tag tag-dan tag-cur" wx:if="{{detail.dbrz==1}}">担</view>
+        <view class="tag tag-dan" wx:else>担</view>
+      </view>
+      <view class="lablist">
+        <block wx:for="{{idenarr}}" wx:key="*this">
+          <view class="lab">{{item}} </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="bues">
+      <view class="title">业务范围</view>
+      <view class="cont">
+        <block wx:for="{{buesarr}}" wx:key="*this">
+          <view class="text"> {{index+1}}、{{item}} </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="uabout">
+      <view class="title">个人简介</view>
+      <view class="cont">{{detail.content}}</view>
+    </view>
+
+  </view>
+
+
+</view>
+
+<view class="downm">
+  <navigator url="/pages/webview/webview">
+    <view>
+      <image style="width:100%;height:65px;vertical-aglin:middle;vertical-align: middle;" src="./images/dowm.png"></image>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/preson/preson.wxml-->
+<view class='edit' bindtap='showeclose' >{{showhide?'编辑':'取消编辑'}}</view>
+<navigator url="/pages/myclassify/myclassify">
+  <view class = "classify_button"><text>分类></text> </view>
+</navigator>
+<view class='my_preson_wrapper'>
+
+  <view class='my_preson' wx:for-items="{{mylistArr}}" wx:for-item="item" wx:key="item.id" wx:for-index="index" class="{{delhide?'del':'my_preson'}}">
+    <view class="{{showhide?'close_hide':'close_show'}}"  bindtap='delmyperson' data-id='{{item.id}}' data-index='{{index}}'>
+      <image style='width: 28px;height:28px;' src='../../images/close_btn.png'></image>
+    </view>
+    <navigator url='/pages/preson_detail/preson_detail?tid={{item.id}}'>
+      <view >
+        <image wx:if="{{item.mould == 0}}" style='width:100%' src='../../images/m1.jpg' mode="aspectFit"></image>
+      </view>
+      <view>
+        <image wx:if="{{item.mould == 2}}" style='width:100%' src='../../images/m2.jpg' mode="aspectFit"></image>
+      </view>
+      <view class='model_class'>
+        <view>{{item.name}}</view>
+        <view style='color: #f38c23'>{{item.identity}}</view>
+        <view style='color: #f38c23'>有才ID：{{item.ycid}}</view>
+      </view>
+    </navigator>
+  </view>
+   <view class='my_preson' style="text-align: center;margin-top: 40px;">
+    <navigator url='/pages/make_preson/make_preson' open-type="switchTab">
+      <image style='width:100%;height:120px;' src='../../images/add_btn.png' mode="aspectFit"></image>
+      <view class=''>
+        <text>添加个人主页</text>
+      </view>
+    </navigator>
+  </view> 
+</view>

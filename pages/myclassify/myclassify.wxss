@@ -1,0 +1,10 @@
+/* pages/myclassify/myclassify.wxss */
+.list_classify{
+  border-top: 1px solid #ccc;
+  padding: 15px 10px;
+  font-size: 14px;
+}
+.join_del_classify{
+  float:right;
+  color: #F68B1F;
+}

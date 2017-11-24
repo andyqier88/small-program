@@ -1,0 +1,76 @@
+<!--pages/edit_detail/edit_detail.wxml-->
+<view style='padding:10px;font-size:14px'>
+  <view class='' >
+    <view class="menu" style='text-align: center;'>
+        有才ID:{{detail.ycid}}
+        <view class="tag tag-shi tag-cur" wx:if="{{detail.smrz==1}}">实</view>
+        <view class="tag tag-shi" wx:else>实</view>
+        <view class="tag tag-qi tag-cur" wx:if="{{detail.qyrz==1}}">企</view>
+        <view class="tag tag-qi" wx:else>企</view>
+        <view class="tag tag-guan tag-cur" wx:if="{{detail.gfrz==1}}">官</view>
+        <view class="tag tag-guan" wx:else>官</view>
+        <view class="tag tag-dan tag-cur" wx:if="{{detail.dbrz==1}}">担</view>
+        <view class="tag tag-dan" wx:else>担</view>
+      </view>
+      <!-- <view class='avator' bindtap='getAvator'>
+        <image src='{{avator}}' style='width:100px;height:100px;border-radius:50%;' mode='aspectFill'></image>
+      </view>
+      <view style='text-align: center;background:#ccc;width:30%;margin:0 auto;border-radius:10px;' bindtap='postAvator'>上传头像</view> -->
+    <form  bindsubmit="formSubmit">
+      <view>
+        <text>
+          姓名：
+        </text>
+        <view class='top_space'>
+          <input placeholder='请填写昵称' maxlength='8' name="name"></input>
+        </view>
+      </view>
+      <view>
+        <text>
+          身份：
+        </text>
+        <view class='top_space'>
+          <input placeholder='请填写身份' maxlength='10' name="identity1"></input>
+          <input placeholder='请填写身份' maxlength='10' name="identity2"></input>
+          <image class='del_btn'  src='../../images/delete_icon@2x.png'></image>          
+          <input placeholder='请填写身份' maxlength='10' name="identity3"></input>
+          <image class='del_btn'  src='../../images/delete_icon@2x.png'></image>
+          <input placeholder='请填写身份' maxlength='10' name="identity4"></input>
+          <image class='del_btn'  src='../../images/delete_icon@2x.png'></image>
+        </view>
+      </view>
+      <view style='text-align: center;'>
+       <image class='add_btn'  src='../../images/add_icon@2x.png'></image>增加身份
+      </view> 
+      <view>
+        <text>
+          业务范围：
+        </text>
+        <view class='top_space'>
+          <input placeholder='业务范围' maxlength='16' name="business1"></input>
+          <input placeholder='业务范围' maxlength='16' name="business2"></input>
+          <image class='del_btn'  src='../../images/delete_icon@2x.png'></image>
+          <input placeholder='业务范围' maxlength='16' name="business3"></input>
+          <image class='del_btn'  src='../../images/delete_icon@2x.png'></image>
+          <input placeholder='业务范围' maxlength='16' name="business4"></input>
+          <image class='del_btn'  src='../../images/delete_icon@2x.png'></image>
+        </view> 
+      </view>
+      <view style='text-align: center;'>
+        <image class='add_btn'  src='../../images/add_icon@2x.png'></image>增加业务范围
+      </view>
+      <view>
+        <text>个人简介</text>
+        <view class='top_space'>
+        
+          <textarea placeholder='个人简介' style='width:85%' name="content"></textarea>
+        </view>
+      </view>
+      <view class='send_btn top_space'>
+        <button form-type="submit" >保存</button>
+        <button form-type="submit" >发布</button>
+      </view>
+    </form>
+  </view>
+</view>
+

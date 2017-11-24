@@ -1,0 +1,65 @@
+/* pages/index/index.wxss */
+.list{
+  padding:10px;
+}
+.itemnav{
+  display: block;
+  width: 330rpx;
+  height: 454rpx;
+  float: left;
+  margin: 15rpx 11rpx ;
+  overflow: hidden;
+}
+.item{
+  width: 330rpx;
+  height: 454rpx;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+.item .photo{
+  position: absolute;
+  width: 330rpx;
+  height: 454rpx;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.item .mask{
+  font-size: 32rpx;
+  padding:18rpx 24rpx;
+  width: 282rpx;
+  height: 110rpx;
+  position: absolute;
+  bottom:0;
+  background: rgba(100, 100, 100, 0.8);
+  color: #fff;
+}
+.item .mask .name{
+  font-size: 28rpx;
+  padding-bottom: 10rpx;
+  height: 36rpx;
+}
+.item .mask .ident,.item .mask .uid{
+  color: #f38c23;
+  padding-bottom: 8rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+}
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.classify_button{
+  float:right;
+  font-size:14px;
+  background:rgb(252, 215, 48);
+  padding:5px 10px;
+  overflow:hidden;
+  margin-top:10px;
+  margin-bottom:-10px;
+  margin-right:20px;
+  border-radius:3px;
+}

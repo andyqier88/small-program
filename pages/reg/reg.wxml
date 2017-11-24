@@ -1,0 +1,10 @@
+<!--pages/reg/reg.wxml-->
+<view class='user_wrapper base'>
+<view style='text-align:center;font-size:16px;'>注册页面</view>
+  <input placeholder="输入手机号" auto-focus type='text' bindinput='userName' />
+  <input placeholder="输入密码" type='password' bindinput='passWord' />
+</view>
+<view class='ueserbtn'>
+  <button class='base' bindtap="regBtnClick">注册</button>
+  <button class='base' bindtap="loginBtnClick">登录</button>
+</view>

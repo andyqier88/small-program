@@ -1,0 +1,26 @@
+ <navigator url="/pages/reg/reg">
+  <text>注册</text> 
+</navigator>
+<navigator url="/pages/login/login">
+  <text>登录</text>
+</navigator> 
+<navigator url="/pages/classifylist/classifylist">
+  <view class = "classify_button"><text>分类></text> </view>
+</navigator>
+<view class="list" style='clear:both'>
+<view wx:for-items="{{listArr}}" wx:for-item="item" wx:key="item.id">
+  <navigator url="/pages/detail/detail?id={{item.ycid}}" class="itemnav">
+    <view class="item">
+      <view class="photo">
+        <image style="width: 100%;  background-color: #eeeeee;" mode="widthFix" src="./images/m{{item.mould}}.jpg"></image>
+      </view>
+      <view class="mask">
+        <view class="name text-overflow">{{item.name}}</view>
+        <view class="ident text-overflow">{{item.identity}}</view>
+        <view class="uid text-overflow">有才ID:{{item.ycid}}</view>
+      </view>
+    </view>
+  </navigator>
+</view>
+
+</view>

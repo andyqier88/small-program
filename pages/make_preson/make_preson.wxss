@@ -1,0 +1,23 @@
+/* pages/make_preson/make_preson.wxss aspectFit */
+.my_preson_wrapper{
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  
+}
+.my_preson{
+  flex: 1;
+  margin: 0 10px;
+  position: relative;
+}
+.model_class{
+  position: absolute;
+  bottom:0;
+  display:block;
+  background:rgba(0,0,0,0.5);
+  width:100%;
+  text-align: center;
+  color:#fff;
+  font-size: 16px;
+  padding:8px 0;
+}

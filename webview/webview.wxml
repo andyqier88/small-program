@@ -1,0 +1,4 @@
+<!--pages/webview/webview.wxml-->
+ <web-view src="https://core.uuucai.com/v1.3.2/static/html/carousel_one.html"></web-view> 
+
+<!-- <view style='margin-top:5rem'><image style='width:100%;height:180px;' src='./images/down.png'></image></view>   -->

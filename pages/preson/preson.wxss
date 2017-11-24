@@ -1,0 +1,62 @@
+/* pages/preson/preson.wxss */
+.my_preson_wrapper{
+  /* display: flex; */
+  margin-top: 10px;
+  padding: 10px;
+  clear: both;
+}
+.my_preson{
+  margin:0 3%;
+  position:relative;
+  width:43.5%;
+  display:inline-block;
+}
+.model_class{
+  position: absolute;
+  bottom:0;
+  display:block;
+  background:rgba(0,0,0,0.5);
+  width:100%;
+  text-align: left;
+  color:#fff;
+  font-size: 16px;
+  padding:8px 0;
+}
+.model_class view{
+  padding-left: 10px;
+}
+.close{
+    
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    z-index: 5;
+}
+.close_show{
+  display: inline-block;
+  position: absolute;
+    top: -4px;
+    left: -4px;
+    z-index: 5;
+}
+.close_hide,.del{
+  display: none
+}
+.edit{
+  padding-left: 15px;
+  padding-top: 10px;
+  color: rgb(246, 139, 31);
+  font-size: 14px;
+  float: left;
+}
+.classify_button{
+  float:right;
+  font-size:14px;
+  background:rgb(252, 215, 48);
+  padding:5px 10px;
+  overflow:hidden;
+  margin-top:10px;
+  margin-bottom:-10px;
+  margin-right:20px;
+  border-radius:3px;
+}

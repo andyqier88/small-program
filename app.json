@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/user/user",
+    "pages/logs/logs",
+    "pages/webview/webview",
+    "pages/reg/reg",
+    "pages/login/login",
+    "pages/preson/preson",
+    "pages/make_preson/make_preson",
+    "pages/edit_detail/edit_detail",
+    "pages/preson_detail/preson_detail",
+    "pages/classifylist/classifylist",
+    "pages/myclassify/myclassify"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "有才",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f68b1f",
+    "borderStyle": "white",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "人才库"
+      },
+      {
+        "pagePath": "pages/preson/preson",
+        "text": "个人主页"
+      },
+      {
+        "pagePath": "pages/make_preson/make_preson",
+        "text": "制作个人主页"
+      }
+    ]
+  }
+}
